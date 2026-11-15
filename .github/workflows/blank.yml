@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEON OS - PC Gamer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h2>⚡ NEON OS</h2>
+<span>● SISTEMA ONLINE</span>
+</header>
+
+<main>
+<h1>LEVEL <span>UP.</span></h1>
+<p>Bem-vindo ao seu PC Gamer Virtual</p>
+
+<div class="apps">
+<button onclick="abrir('setup')">⚙️<br>Meu Setup</button>
+<button onclick="abrir('games')">🎮<br>Jogos</button>
+<button onclick="abrir('notes')">📝<br>Notas</button>
+<button onclick="abrir('calc')">🧮<br>Calculadora</button>
+<button onclick="abrir('browser')">🌐<br>Navegador</button>
+</div>
+
+<section id="setup" class="janela">
+<button class="fechar" onclick="fechar('setup')">✖</button>
+<h2>⚙️ Meu Setup</h2>
+<p>Bem-vindo ao seu computador gamer!</p>
+<p>Status: 🟢 Online</p>
+</section>
+
+<section id="games" class="janela">
+<button class="fechar" onclick="fechar('games')">✖</button>
+<h2>🎮 Biblioteca de Jogos</h2>
+<div class="jogos">
+<div>⚔️<br>NEON RUSH</div>
+<div>🚀<br>STAR QUEST</div>
+<div>👾<br>PIXEL ARENA</div>
+</div>
+</section>
+
+<section id="notes" class="janela">
+<button class="fechar" onclick="fechar('notes')">✖</button>
+<h2>📝 Bloco de Notas</h2>
+<textarea id="nota" placeholder="Escreva suas anotações..."></textarea>
+</section>
+
+<section id="calc" class="janela">
+<button class="fechar" onclick="fechar('calc')">✖</button>
+<h2>🧮 Calculadora</h2>
+<input id="visor" readonly>
+<div class="botoes">
+<button onclick="digitar('7')">7</button>
+<button onclick="digitar('8')">8</button>
+<button onclick="digitar('9')">9</button>
+<button onclick="digitar('/')">÷</button>
+<button onclick="digitar('4')">4</button>
+<button onclick="digitar('5')">5</button>
+<button onclick="digitar('6')">6</button>
+<button onclick="digitar('*')">×</button>
+<button onclick="digitar('1')">1</button>
+<button onclick="digitar('2')">2</button>
+<button onclick="digitar('3')">3</button>
+<button onclick="digitar('-')">−</button>
+<button onclick="digitar('0')">0</button>
+<button onclick="digitar('.')">.</button>
+<button onclick="calcular()">=</button>
+<button onclick="digitar('+')">+</button>
+<button onclick="limpar()">C</button>
+</div>
+</section>
+
+<section id="browser" class="janela">
+<button class="fechar" onclick="fechar('browser')">✖</button>
+<h2>🌐 Navegador</h2>
+<input id="pesquisa" placeholder="Digite algo para pesquisar">
+<button onclick="pesquisar()">Pesquisar</button>
+</section>
+
+</main>
+
+<footer>
+<button onclick="menu()">✦ INICIAR</button>
+<span id="hora"></span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
